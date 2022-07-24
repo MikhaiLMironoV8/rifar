@@ -1,0 +1,28 @@
+:root {
+	--main-color: #C91820;
+	--color-black: black;
+	--color-white: white;
+	--switches_btn-color: #C2C2C2;
+	--switches_btn-color-active: #a0a0a0;
+	--font-size: 20px;
+	--anim-dur-1: 0.3s;
+	
+	font-size: var(--font-size);
+}
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-black);
+	user-select: none;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}

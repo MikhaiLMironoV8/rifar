@@ -1,0 +1,135 @@
+@import "components/fonts/Montserrat.scss";
+@import "components/fonts/Inter.scss";
+@import "components/general.scss";
+@import "components/header.scss";
+@import "components/main_slider.scss";
+@import "components/prods_card_list_slider.scss";
+@import "components/product_card.scss";
+@import "components/footer.scss";
+
+.main_wrapper {
+	
+	.our_advantages_wrapper {
+		margin-top: 70px;
+		padding: 0px 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+		
+		article {
+			display: block;
+			
+			.icon_wrapper {
+				display: block;
+				margin-bottom: 20px;
+				text-align: center;
+				
+				i {
+					font-size: 72px;
+					color: var(--main-color);
+				}
+			}
+			
+			h3 {
+				display: block;
+				font-family: "Montserrat";
+				font-weight: 600;
+				font-size: 36px;
+				margin: 0;
+				text-align: center;
+			}
+			
+			.desc_wrapper {
+				margin-top: 10px;
+				font-family: "Montserrat";
+				font-weight: 500;
+				font-size: 28px;
+				text-align: center;
+			}
+		}
+	}
+	
+	.leader_prods {
+		margin-top: 100px;
+		
+		.title_more_prods {
+			max-width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 91px 10px 70px;
+			
+			.section_title {
+				display: inline-block;
+				background-image: url("/images/bg_img_h2.svg");
+				background-position: center center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				color: var(--color-white);
+				font-family: "Montserrat";
+				font-weight: 600;
+				font-size: 40px;
+				margin: 0;
+				padding: 10px 70px;
+			}
+			
+			.more_prods {
+				display: block;
+				font-family: "Montserrat";
+				font-weight: 600;
+				font-size: 36px;
+				transition-property: color;
+				transition-duration: var(--anim-dur-1);
+				
+				&:hover {
+					color: var(--main-color);
+				}
+			}
+		}
+		
+		.prods_card_list_slider {
+			
+		}
+	}
+	
+	.sale_banner_wrapper {
+		margin-top: 100px;
+		display: block;
+		
+		.banner_image_wrapper {
+			max-width: 100%;
+			height: 600px;
+			
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+			}
+		}
+	}
+	
+	.category_cards_wrapper {
+		margin: 100px 91px 0px;
+		max-width: 100%;
+		
+		.section_title {
+			display: block;
+			color: var(--color-black);
+			font-family: "Montserrat";
+			font-weight: 500;
+			font-size: 64px;
+			margin: 0;
+			padding: 0px 30px 30px;
+			text-align: center;
+		}
+		
+		.categoty_cards {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 50px;
+		}
+	}
+}

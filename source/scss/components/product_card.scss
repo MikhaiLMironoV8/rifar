@@ -1,0 +1,121 @@
+.prod_card, .category_card {
+	display: block;
+				
+	.card_link_wrapper {
+		display: block;
+		user-select: none;
+		
+		.image_title_wrapper {
+			display: block;
+			border: 2px solid var(--main-color);
+			background: transparent;
+			transition-property: background;
+			transition-duration: var(--anim-dur-1);
+			
+			.image_prod_wrapper {
+				max-width: 100%;
+				height: 370px;
+				margin: 20px;
+				
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					object-position: center center;
+				}
+			}
+			
+			.title_prod_wrapper {
+				margin: 20px 10px;
+			
+				h4 {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					font-family: "Montserrat";
+					font-size: 30px;
+					font-weight: 600;
+					margin: 0;
+					line-height: 37px;
+					height: 74px;
+					// transition-property: color;
+					// transition-duration: var(--anim-dur-1);
+				}
+			}
+		}
+		
+		.price_wrapper {
+			margin: 20px 0px 10px;
+			
+			div {
+				
+				.price {
+					font-family: "Montserrat";
+					font-weight: 700;
+					font-size: 30px;
+					color: var(--main-color);
+				}
+				
+				.price_desc {
+					font-family: "Montserrat";
+					font-weight: 500;
+					font-size: 30px;
+				}
+			}
+		}
+		
+		&:hover {
+			
+			.image_title_wrapper {
+				background: conic-gradient(from 179.91deg at 50% 50%, rgba(245, 111, 118, 0.48) 0deg, rgba(250, 208, 208, 0.38) 285deg, rgba(245, 111, 118, 0.48) 360deg);
+			}
+			
+			.title_prod_wrapper {
+				
+				h4 {
+					color: white;
+				}
+			}
+		}
+	}
+	
+	.cart_wrapper {
+		
+		form {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 30px;
+			
+			input[type="text"] {
+				font-family: "Inter";
+				font-weight: 600;
+				font-size: 32px;
+				border: 3px solid var(--main-color);
+				border-radius: 100px;
+				width: 20%;
+				text-align: center;
+				padding: 5px 10px;
+			}
+			
+			input[type="button"], input[type="submit"] {
+				cursor: pointer;
+				padding: 5px 25px;
+				border: 3px solid var(--main-color);
+				border-radius: 100px;
+				background-color: transparent;
+				font-size: 32px;
+				font-family: "Montserrat";
+				font-weight: 600;
+				transition-property: color, background;
+				transition-duration: var(--anim-dur-1);
+				
+				&:hover {
+					background-color: var(--main-color);
+					color: var(--color-white);
+				}
+			}
+		}
+	}
+}

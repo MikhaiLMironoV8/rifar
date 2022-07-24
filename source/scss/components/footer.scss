@@ -1,0 +1,134 @@
+.footer_wrapper {
+	border-top: 6px solid var(--main-color);
+	display: flex;
+	align-items: flex-start;
+	gap: 70px;
+	padding: 120px 91px 50px;
+	
+	.section_title {
+		margin: 0px 0px 20px;
+		font-family: "Montserrat";
+		font-weight: 700;
+		font-size: 40px;
+	}
+	
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	.logo_desc_wrapper {
+		
+		.img_wrapper {
+			width: 35%;
+			
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				object-position: left center;
+			}
+		}
+		
+		.desc_wrapper {
+			
+			.article_title {
+				margin: 30px 0px 15px;
+				font-family: "Montserrat";
+				font-weight: 600;
+				font-size: 40px;
+			}
+			
+			.article_desc {
+				font-family: "Montserrat";
+				font-weight: 500;
+				font-size: 32px;
+			}
+		}
+	}
+	
+	.nav_list_wrapper {
+		
+		.section_title {
+			
+		}
+		
+		.nav_list {
+				
+			li {
+				
+				a {
+					font-family: "Montserrat";
+					font-weight: 500;
+					font-size: 40px;
+					line-height: 50px;
+					transition-property: color;
+					transition-duration: var(--anim-dur-1);
+					
+					&:hover {
+						color: var(--main-color);
+					}
+					
+					&.highlight_font {
+						color: var(--main-color);
+					}
+				}
+			}
+		}
+	}
+	
+	.contacts_list_wrapper {
+		
+		.section_title {
+			
+		}
+		
+		.contacts_list {
+			
+			li {
+				white-space: nowrap;
+				font-family: "Montserrat";
+				font-weight: 600;
+				font-size: 32px;
+				line-height: 50px;
+				
+				span {
+					color: var(--main-color);
+				}
+				
+				a {
+					transition-property: color;
+					transition-duration: var(--anim-dur-1);
+					
+					&[href]:hover {
+						color: var(--main-color);
+					}
+					
+					&.number {
+						font-family: "Inter";
+						font-weight: 400;
+					}
+					
+					i {
+						
+					}
+				}
+			}
+		}
+		
+		.soc_network {
+			margin-top: 10px;
+			
+			a {
+				font-size: 40px;
+				transition-property: color;
+				transition-duration: var(--anim-dur-1);
+				
+				&:hover {
+					color: var(--main-color);
+				}
+			}
+		}
+	}
+}

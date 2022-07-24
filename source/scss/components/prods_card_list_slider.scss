@@ -1,0 +1,54 @@
+.prods_card_list_slider {
+	margin: 30px 15px 30px;
+	position: relative;
+	padding: 0px 51px;
+	min-width: 0;
+	
+	.slick-arrow {
+		position: absolute;
+		z-index: 1;
+		width: 51px;
+		height: 51px;
+		background: linear-gradient(180deg, rgba(245, 111, 118, 0.49) 0%, rgba(255, 112, 118, 0.72) 50%, #C91820 100%);
+		border-radius: 100%;
+		border: none;
+		top: calc(50% - 25.5px);
+		cursor: pointer;
+		outline: none;
+		
+		i {
+			font-size: 36px;
+			color: var(--color-white);
+		}
+		
+		&.slick-prev {
+			left: 0px;
+		}
+		
+		&.slick-next {
+			right: 0px;
+		}
+	}
+	
+	.slick-list {
+		overflow: hidden;
+		max-width: 100%;
+		
+		.slick-track {
+			display: flex;
+			justify-content: center;
+			gap: 50px;
+			
+			.prod_card {
+				
+				&:first-child {
+					margin-left: 25px;
+				}
+				
+				&:last-child {
+					margin-right: 25px;
+				}
+			}
+		}
+	}
+}

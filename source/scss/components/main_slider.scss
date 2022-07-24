@@ -1,0 +1,84 @@
+.main_slider_wrapper {
+	position: relative;
+	
+	.slick-arrow {
+		position: absolute;
+		z-index: 1;
+		width: 51px;
+		height: 51px;
+		background: linear-gradient(180deg, rgba(245, 111, 118, 0.49) 0%, rgba(255, 112, 118, 0.72) 50%, #C91820 100%);
+		border-radius: 100%;
+		border: none;
+		top: calc(50% - 25.5px);
+		cursor: pointer;
+		outline: none;
+		
+		i {
+			font-size: 36px;
+			color: var(--color-white);
+		}
+		
+		&.slick-prev {
+			left: 15px;
+		}
+		
+		&.slick-next {
+			right: 15px;
+		}
+	}
+	
+	.slick-list {
+		overflow: hidden;
+		max-width: 100%;
+		
+		.slick-track {
+			display: flex;
+			
+			.slide_wrapper {
+				height: 600px;
+				
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: center center;
+				}
+			}
+		}
+	}
+	
+	.slick-dots {
+		list-style: none;
+		margin: 10px 0 0 0;
+		padding: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		
+		li {
+			
+			button {
+				--btn-size: 20px;
+				width: var(--btn-size);
+				height: var(--btn-size);
+				cursor: pointer;
+				color: transparent;
+				border: none;
+				border-radius: 100%;
+				background-color: var(--switches_btn-color);
+				outline: none;
+				transition-property: background;
+				transition-duration: var(--anim-dur-1);
+			}
+			
+			&.slick-active {
+				
+				button {
+					background-color: var(--main-color);
+					cursor: default;
+				}
+			}
+		}
+	}
+}
